@@ -32,7 +32,7 @@ export const ButtonBox = styled.div`
 `;
 export const StEmoButton = styled.button<{ isClick: boolean }>`
   width: 45px;
-  height: 45px;
+  height: 35px;
   border: 0;
   background-color: ${(props) =>
     props.isClick ? themeColor.main.chocomilk : "transparent"};

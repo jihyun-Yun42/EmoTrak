@@ -16,7 +16,7 @@ export const TabletOpenBox = keyframes`
     top: 100%;
   }
   to {
-    top: 90%;
+    top: 75%;
   }
 `;
 
@@ -25,7 +25,7 @@ export const MobileOpenBox = keyframes`
     top: 100%;
   }
   to {
-    top: 88%;
+    top: 78%;
   }
 `;
 
@@ -34,7 +34,7 @@ export const MiniMobileOpenBox = keyframes`
     top: 100%;
   }
   to {
-    top: 85%;
+    top: 70%;
   }
 `;
 
@@ -48,15 +48,15 @@ export const Wrap = styled.div`
     z-index: 10;
     left: 0;
     position: absolute;
-    top: ${({ side }: Partial<DayProps>) => side && "90%"};
+    top: ${({ side }: Partial<DayProps>) => side && "75%"};
     animation: ${({ side }: Partial<DayProps>) => side && TabletOpenBox} 1s ease;
   }
   ${device.mobile} {
-    top: ${({ side }: Partial<DayProps>) => side && "88%"};
+    top: ${({ side }: Partial<DayProps>) => side && "78%"};
     animation: ${({ side }: Partial<DayProps>) => side && MobileOpenBox} 1s ease;
   }
   ${device.miniMobile} {
-    top: ${({ side }: Partial<DayProps>) => side && "85%"};
+    top: ${({ side }: Partial<DayProps>) => side && "70%"};
     animation: ${({ side }: Partial<DayProps>) => side && MiniMobileOpenBox} 1s ease;
   }
 `;
@@ -80,7 +80,7 @@ export const Container = styled.div`
     flex-direction: column;
   }
   ${device.miniMobile} {
-    height: 300px;
+    height: 350px;
     flex-direction: column;
   }
 `;
