@@ -6,12 +6,7 @@ import { StarProps } from "../../data/type/type";
 const Star = ({ size, color, score, onClick }: StarProps) => {
   return (
     <StStarButton type="button" score={score} onClick={onClick}>
-      <StarIcon
-        height={size}
-        width={size}
-        fill={`${color}`}
-        stroke={`${color}`}
-      />
+      <StarIcon height={size} width={size} fill={`${color}`} stroke={`${color}`} />
     </StStarButton>
   );
 };

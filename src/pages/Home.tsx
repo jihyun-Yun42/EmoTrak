@@ -56,16 +56,8 @@ const Home = () => {
     <St.Container>
       {!side && (
         <St.MiniCalendarWrap>
-          <MiniCalendar
-            year={select.year}
-            month={select.month - 1}
-            onClick={prevMonth}
-          />
-          <MiniCalendar
-            year={select.year}
-            month={select.month + 1}
-            onClick={nextMonth}
-          />
+          <MiniCalendar year={select.year} month={select.month - 1} onClick={prevMonth} />
+          <MiniCalendar year={select.year} month={select.month + 1} onClick={nextMonth} />
         </St.MiniCalendarWrap>
       )}
       <St.CalendarBox>
@@ -138,9 +130,7 @@ const Home = () => {
         </St.DiaryDay>
       </St.CalendarBox>
 
-      {side && (
-        <Sidebar side={side} setSide={setSide} data={diary} diaryDay={select} />
-      )}
+      {side && <Sidebar side={side} setSide={setSide} data={diary} diaryDay={select} />}
     </St.Container>
   );
 };
