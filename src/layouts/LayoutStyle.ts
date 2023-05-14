@@ -138,8 +138,10 @@ export const NavWrapper = styled.div`
 
 export const LogoImg = styled.img`
   width: 90px;
+  height: 82px;
   ${device.miniMobile} {
     width: 80px;
+    height: 75px;
   }
 `;
 
